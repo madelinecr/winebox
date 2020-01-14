@@ -1,0 +1,8 @@
+<h1>Add new Wine</h1>
+
+<%= form_tag :action => 'create' do %>
+  <label for="wine_name">Name</label>
+  <%= text_field "wine", "name"%>
+
+  <%= submit_tag "Create" %>
+<% end %>

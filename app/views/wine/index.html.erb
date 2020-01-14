@@ -1,3 +1,6 @@
 <h1>Wine Index</h1>
 
-<%= @response.class %>
+<%= @wines.each do |wine| %>
+  <h2><%= wine.name %></h2>
+  <h3><%= wine.user_rating %></h3>
+<% end %>
