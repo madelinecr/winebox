@@ -2,7 +2,10 @@
 
 <%= form_tag :action => 'create' do %>
   <label for="wine_name">Name</label>
-  <%= text_field "wine", "name"%>
+  <%= text_field "wine", "name" %>
+
+  <label for="wine_user_rating">My Rating</label>
+  <%= text_field "wine", "user_rating" %>
 
   <%= submit_tag "Create" %>
 <% end %>

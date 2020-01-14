@@ -7,6 +7,8 @@ class WineController < ApplicationController
     @wine = Wine.new
   end
 
+  #TODO Change from params.permit! to explicit whitelisting of attrs
+  #TODO Render and return flash messages
   def create
     params.permit!
     @wine = Wine.new(params[:wine])
